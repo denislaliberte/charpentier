@@ -1,2 +1,11 @@
-#!/bin/bash
-exit 0
+#!/usr/bin/env ruby
+
+require 'methadone'
+
+include Methadone::Main
+
+main do
+  puts 'JM Charpentier use $ jm  --help'
+end
+
+go!

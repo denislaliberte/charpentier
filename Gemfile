@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 gem 'aruba'
-gem 'rubocop'
-
-
-
+gem 'rubocop', '0.37.2'
+gem 'rubocop-rspec'
+gem 'methadone'
