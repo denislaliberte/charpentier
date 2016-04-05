@@ -1,5 +1,6 @@
-RSpec.describe 'charpentier' do
-  it "help" do
-    expect("charpentier --help").to eq("help message place holder")
-  end
+require 'spec_helper'
+
+RSpec.describe 'charpentier' , :type => :aruba do
+  before(:each) { run('jm') }
+  it { expect(last_command_started).to be_successfully_executed }
 end
