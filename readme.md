@@ -14,9 +14,12 @@
 - manage name colision for recipe with default value
 - manage log
 - add check script
+- support sunzi legacy, install.sh sunzi.yml
 - export csv for check status
 - download template script
 - download template dependencies
+- delete compiled folder for security
+- add travis
 - add style checker for recipes
 - vagrant provisionner plugin https://github.com/mitchellh/vagrant/tree/master/plugins/provisioners
 - docker plugin
@@ -28,3 +31,4 @@
 - create simple dependecy manager csv, github pages
 - Choose a command line interface docopt.org or naildrivin5.com/gli
 - web hook for git operation
+- steal idea from chef, puppet
