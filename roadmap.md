@@ -30,6 +30,7 @@
 - support sunzi legacy, install.sh sunzi.yml
 
 ## Somedays
+- Add command folder for simple command plugin one files
 - add lita plugin plugins.lita.io
 - deploy to digital ocean
 - download template script
