@@ -2,6 +2,8 @@
 
 - done ! choose integration test
 - done ! choose cli interface
-- $ jm --help // simple hello world
+- done ! $ jm // simple hello world
+- $ jm --help // simple help message
+- $ jm --version // add version number
 - $ jm create // copy base directory
 - Ensure charpentier.yml is at root directory
