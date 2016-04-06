@@ -5,7 +5,11 @@ require 'methadone'
 include Methadone::Main
 
 main do
-  puts 'JM Charpentier use $ jm  --help'
+  puts 'Charpentier, Simple devops tools for small teams
+Name after Jean-Marie Charpentier, he is friendly you can call him jm
+
+  Usage: jm [--help] compile
+'
 end
 
 go!
