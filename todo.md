@@ -5,5 +5,7 @@
 - done ! $ jm // simple hello world
 - $ jm --help // simple help message
 - $ jm --version // add version number
-- $ jm create // copy base directory
-- Ensure charpentier.yml is at root directory
+- documentation, readme, mdwiki, roadmap, changelog, liscence
+- basic cli interface
+- travisci
+

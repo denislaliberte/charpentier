@@ -34,6 +34,7 @@
 
 ## Somedays
 - support one file plugin
+- test open3 http://ruby-doc.org/stdlib-1.9.3/libdoc/open3/rdoc/Open3.html
 - refactor ssh to a plugin
 - add lita plugin plugins.lita.io
 - deploy to digital ocean
