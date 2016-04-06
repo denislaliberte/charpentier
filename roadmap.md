@@ -3,17 +3,20 @@
 ## Project Goals
 
 ## 0.0
-- scaffold
-- compile recipes and files with charpentier.yml
+- Integration test, aruba, rspec
+- base commands, help, version
+- documentation, readme, mdwiki, roadmap, changelog, liscence
+- basic cli interface
+- travisci
 
 ## 0.1 
-- execute on vagrant
+- Scaffold
+- Compile recipes and files with attributes in charpentier.yml
+- Execute on vagrant
 
-## 0.1
+## 0.2
 - read yml from roles, recipes and global overrides
 - compile multiple recipes to script.sh
-
-## 0.2 
 - execute by ssh
 
 ## 0.3
@@ -30,6 +33,8 @@
 - support sunzi legacy, install.sh sunzi.yml
 
 ## Somedays
+- support one file plugin
+- refactor ssh to a plugin
 - add lita plugin plugins.lita.io
 - deploy to digital ocean
 - download template script
