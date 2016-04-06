@@ -11,5 +11,6 @@ Name after Jean-Marie Charpentier, he is friendly you can call him jm
   Usage: jm [--help] compile
 '
 end
+version '0.0.0'
 
 go!

@@ -21,4 +21,11 @@ RSpec.describe Charpentier, type: :aruba do
         .to have_output an_output_string_matching help_message
     end
   end
+  describe 'jm --version' do
+    before(:each) { run('jm --version') }
+    it do
+      expect(last_command_started)
+        .to have_output an_output_string_matching 'v\d+\.\d+\.\d+$'
+    end
+  end
 end
