@@ -1,16 +1,8 @@
 # todo
 
-- done ! choose integration test
-- done ! choose cli interface
-- done ! $ jm // simple hello world
-- done ! $ jm --help // simple help message
-- done ! $ jm --version // add version number
-- done ! basic cli interface
-- done ! documentation, readme, mdwiki, roadmap, 
-- documentation changelog, liscence, constribution guide
+- add rake task
 - travisci
 - refactor integration test to cucumber
-- add rake task
 - rake task build readme, alias jm to charpentier
 - add gem files to install by gem
 - check gitgot interface
@@ -30,3 +22,13 @@
 - check https://github.com/rails/rails/blob/master/CONTRIBUTING.md
 - add http://humanstxt.org/humans.txt and meta to mdwiki
 - check http://read-the-docs.readthedocs.org/
+- constribution guide
+- changelog
+- done ! liscence
+- done ! choose integration test
+- done ! choose cli interface
+- done ! $ jm // simple hello world
+- done ! $ jm --help // simple help message
+- done ! $ jm --version // add version number
+- done ! basic cli interface
+- done ! documentation, readme, mdwiki, roadmap, 
