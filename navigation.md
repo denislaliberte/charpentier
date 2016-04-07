@@ -2,7 +2,7 @@
 
 [ about ]()
 
-  * [ roadmap ](roadmap.md)
-  * [ mit-liscence ](mit-liscence.md)
+  * [ roadmap ](ROADMAP.md)
+  * [ mit-liscence ](MIT-LISCENCE.md)
 
 [ Github ](https://github.com/denislaliberte/charpentier)
