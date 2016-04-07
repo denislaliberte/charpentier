@@ -19,5 +19,5 @@
 - fork to skeleton project
 - check  http://editorconfig.org
 - http://keepachangelog.com/
-- scrutinizer-ci.com
+- scrutinizer-ci.com and/or appveyor.com
 
