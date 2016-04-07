@@ -5,7 +5,8 @@
 - done ! $ jm // simple hello world
 - done ! $ jm --help // simple help message
 - done ! $ jm --version // add version number
-- documentation, readme, mdwiki, roadmap, changelog, liscence
+- done ! documentation, readme, mdwiki, roadmap, 
+- documentation changelog, liscence
 - done ! basic cli interface
 - travisci
 - refactor integration test to cucumber
