@@ -19,5 +19,14 @@
 - fork to skeleton project
 - check  http://editorconfig.org
 - http://keepachangelog.com/
-- scrutinizer-ci.com and/or appveyor.com
-
+- scrutinizer-ci.com and/or appveyor.com and/or code climate
+- check http://contributor-covenant.org/version/1/4/code_of_conduct.md
+- add VERSION file
+- changelog.md or history.md 
+- contributing : check workflow https://github.com/rubygems/rubygems/blob/master/CONTRIBUTING.rdoc
+- check autotest https://autotest.github.io/
+- check http://yardoc.org/
+- check relishapp
+- check https://github.com/rails/rails/blob/master/CONTRIBUTING.md
+- add http://humanstxt.org/humans.txt and meta to mdwiki
+- check http://read-the-docs.readthedocs.org/
