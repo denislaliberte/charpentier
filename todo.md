@@ -8,4 +8,8 @@
 - documentation, readme, mdwiki, roadmap, changelog, liscence
 - done ! basic cli interface
 - travisci
+- refactor integration test to cucumber
+- add rake task
+- rake task build readme, alias jm to charpentier
+- add gem files to install by gem
 
