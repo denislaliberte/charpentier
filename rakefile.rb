@@ -11,7 +11,7 @@ task :publish do
   git = Git.open(working_dir, log: Logger.new(file))
   git.checkout('gh-pages')
   git.merge('master')
-  git.push('origin','gh-pages')
+  git.push('origin', 'gh-pages')
   git.checkout('master')
   file.close
   puts 'log file'
