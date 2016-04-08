@@ -7,7 +7,7 @@ def git_log(name, code)
   log_path = working_dir + '/log/' + name + '_' + Time.now.to_i.to_s + '.log'
   file = File.new(log_path, 'w+')
   git = Git.open(working_dir, log: Logger.new(file))
-  code.call git
+  code.call(git, file)
   file.close
 end
 
