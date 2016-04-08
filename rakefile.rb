@@ -14,12 +14,12 @@ end
 desc 'publish site : merge master to gh-pages and push to github'
 task :publish do |task|
   puts task.comment
-  git_log task.name, (lambda do |git, file|
+  git_log task.name, (lambda do |git, log_file|
     git.checkout('gh-pages')
     git.merge('master')
     git.push('origin', 'gh-pages')
     git.checkout('master')
-    puts 'log file :' + file.path
+    puts 'log file :' + log_file.path
   end)
 end
 
