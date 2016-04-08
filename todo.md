@@ -1,6 +1,9 @@
 # todo
 
-- add rake task
+- add rake task to publish to gh pages
+- break publish in merge and push
+- add rake task to publish to remove log file
+- add check task rubocop and rspec
 - travisci
 - refactor integration test to cucumber
 - rake task build readme, alias jm to charpentier
