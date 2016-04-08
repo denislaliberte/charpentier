@@ -1,36 +1,9 @@
 # todo
 
+- add readme for version 1.0
 - add rake task to publish to gh pages
 - break publish in merge and push
 - add rake task to publish to remove log file
 - add check task rubocop and rspec
 - travisci
-- refactor integration test to cucumber
 - rake task build readme, alias jm to charpentier
-- add gem files to install by gem
-- check gitgot interface
-- add human.txt
-- add readme for version 1.0
-- fork to skeleton project
-- check  http://editorconfig.org
-- http://keepachangelog.com/
-- scrutinizer-ci.com and/or appveyor.com and/or code climate
-- add VERSION file
-- contributing : check workflow https://github.com/rubygems/rubygems/blob/master/CONTRIBUTING.rdoc
-- check autotest https://autotest.github.io/
-- check http://yardoc.org/
-- check relishapp
-- check https://github.com/rails/rails/blob/master/CONTRIBUTING.md
-- add http://humanstxt.org/humans.txt and meta to mdwiki
-- check http://read-the-docs.readthedocs.org/
-- constribution guide
-- changelog
-- done ! liscence
-- done ! choose integration test
-- done ! choose cli interface
-- done ! $ jm // simple hello world
-- done ! $ jm --help // simple help message
-- done ! $ jm --version // add version number
-- done ! basic cli interface
-- done ! documentation, readme, mdwiki, roadmap, 
-- done ! contributor-covenant.org

@@ -33,6 +33,18 @@
 - support sunzi legacy, install.sh sunzi.yml
 
 ## Somedays
+- fork to skeleton project
+- add gem files to install by gem
+- refactor integration test to cucumber
+- check  http://editorconfig.org
+- http://keepachangelog.com/
+- scrutinizer-ci.com and/or appveyor.com and/or code climate
+- check autotest https://autotest.github.io/
+- check http://yardoc.org/
+- check relishapp
+- add http://humanstxt.org/humans.txt and meta to mdwiki
+- check http://read-the-docs.readthedocs.org/
+- constribution guide $ git show contribting
 - support one file plugin
 - test open3 http://ruby-doc.org/stdlib-1.9.3/libdoc/open3/rdoc/Open3.html
 - refactor ssh to a plugin
