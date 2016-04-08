@@ -5,7 +5,7 @@ desc 'publish site : merge master to gh-pages and push to github'
 task :publish do
   working_dir = File.dirname(__FILE__)
   git = Git.open(working_dir, log: Logger.new(STDOUT))
-  current_branch = git.branches.local
+  current_branch = `git rev-parse --abbrev-ref HEAD`
   git.checkout('gh-pages')
   git.merge('master')
   git.push(g.remote('origin'))
