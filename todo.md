@@ -15,9 +15,7 @@
 - check  http://editorconfig.org
 - http://keepachangelog.com/
 - scrutinizer-ci.com and/or appveyor.com and/or code climate
-- check http://contributor-covenant.org/version/1/4/code_of_conduct.md
 - add VERSION file
-- changelog.md or history.md 
 - contributing : check workflow https://github.com/rubygems/rubygems/blob/master/CONTRIBUTING.rdoc
 - check autotest https://autotest.github.io/
 - check http://yardoc.org/
@@ -35,3 +33,4 @@
 - done ! $ jm --version // add version number
 - done ! basic cli interface
 - done ! documentation, readme, mdwiki, roadmap, 
+- done ! contributor-covenant.org
