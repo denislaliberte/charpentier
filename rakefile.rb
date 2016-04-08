@@ -2,20 +2,25 @@ require 'git'
 require 'logger'
 require 'tempfile'
 
-desc 'publish site : merge master to gh-pages and push to github'
-task :publish do
-  puts 'rake publish'
+def git_log(name, code)
   working_dir = File.dirname(__FILE__)
-  log_path = working_dir + '/log/rake_pubish_' + Time.now.to_i.to_s + '.log'
+  log_path = working_dir + '/log/' + name + '_' + Time.now.to_i.to_s + '.log'
   file = File.new(log_path, 'w+')
   git = Git.open(working_dir, log: Logger.new(file))
-  git.checkout('gh-pages')
-  git.merge('master')
-  git.push('origin', 'gh-pages')
-  git.checkout('master')
+  code.call git
   file.close
-  puts 'log file'
-  puts file.path
+end
+
+desc 'publish site : merge master to gh-pages and push to github'
+task :publish do |task|
+  puts task.comment
+  git_log task.name, (lambda do |git, file|
+    git.checkout('gh-pages')
+    git.merge('master')
+    git.push('origin', 'gh-pages')
+    git.checkout('master')
+    puts 'log file :' + file.path
+  end)
 end
 
 desc 'list all task'
