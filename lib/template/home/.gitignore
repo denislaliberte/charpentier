@@ -1,0 +1,6 @@
+env/local/*
+!env/local/.gitkeep
+env/prod/*
+!env/prod/.gitkeep
+compiled/*
+!compiled/.gitkeep

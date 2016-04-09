@@ -1,0 +1,5 @@
+---
+# Charpentier variables
+workspace: ~/Sites
+project_template: ~/.charpentier/projects/template.yml
+environnements: ~/.charpentier/env
