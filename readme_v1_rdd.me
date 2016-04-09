@@ -14,11 +14,45 @@ Charpentier is a command line tools to
 
 
 ## work with all the team projects at once
+## Manage multiple environnement
 
+Each project script data script and file are in tis own folder inside the `~/.charpentier/projects/project` directory
+
+You can override script and variable by environnement in `~/.charpentier/env/*/project` 
+
+Everything in `~/.charpentier/env/local` is gitignore so each team member can have it's own configutation override
+
+`~/.charpentier/env/prod` folder is also gitignore, to ensure we dont share production information to everyone
+You can version prod environnement in a private repository accessible only to sysadmin
+
+```
+~/.charpentier
+├── charpentier.yml
+├── compiled
+├── env
+│   ├── local
+│   ├── prod
+│   ├── readme.md
+│   └── stage
+│       └── project_template
+│           └── charpentier.yml
+├── plugins
+│   └── template.rb
+├── projects
+│   └── project_template
+│       ├── charpentier.yml
+│       ├── rakefile.rb
+│       └── recipes
+│           ├── complete_recipe
+│           │   ├── data.yml
+│           │   ├── file.conf
+│           │   └── script.sh
+│           └── simple_recipes.sh
+├── rakefile.rb
+└── readme.md
+```
 
 ## common interface for multiple tool
-
-## Manage multiple environnement
 
 ## Simple provisionner
 
@@ -28,3 +62,20 @@ Charpentier is a command line tools to
 
 ## build your own plugins
 
+## project data
+If you want to share the charpentier data with developper outside of your team you can also put the
+project folder inside the repository
+
+```
+~/Sites/project_example/charpentier
+├── charpentier.yml
+├── compiled
+├── recipes
+│   ├── complete_recipe
+│   │   ├── data.yml
+│   │   ├── file.conf
+│   │   └── script.sh
+│   └── simple_recipes.sh
+└── roles
+    └── local.yml
+```
