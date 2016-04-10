@@ -33,6 +33,7 @@
 - support sunzi legacy, install.sh sunzi.yml
 
 ## Somedays
+- manage multiple team portfolio of project 
 - check seattlerb/rake-remote_task
 - add task for $ git ls-files | tee manifest.txt
 - fork to skeleton project

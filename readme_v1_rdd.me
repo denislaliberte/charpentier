@@ -1,6 +1,9 @@
 # charpentier
 
-This is the future readme of the v1 of the charpentier project in the idea of [readme driven design ](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
+Charpentier is a devops tool to automate task on multiple projects with différents
+technology, tooling and environnement.
+
+***This is the future readme of the v1 of the charpentier project in the idea of [Readme Driven Design ](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)***
 
 ```cmd
 $ jm
@@ -9,14 +12,114 @@ Name after Jean-Marie Charpentier, he is friendly you can call him jm
 
   Usage: jm [--help] compile
 ```
+## Install
 
-Charpentier is a command line tools to 
+```
+$ gem install charpentier
+```
+
+Now you can clone the team portfolio of projects or create your own
+
+```
+$ gem portfolio create personnal-projects
+  new portfolio in ~/.charpentier/portfolio/personnal-projects
+
+$ gem portfolio clone root@githosting.example.com:team-portfolio
+  clone portfolio in ~/.charpentier/portfolio/team-portfolio
+```
+
+## common interface for multiple tool
+
+If your using multiple technologie you have a lot of tools to automate task on your projects
+- yeoman to generate scaffolding
+- 2 or 3 js task runner like gulp and grunt to automate js tasks
+- capistrano to deploy rails projects
+- rake to automate things
+- a bunch of shell scripts
+- artisan, drush composer for php project
+- a lot of test runner for front end and backend
+
+Whith charpentier you can configure a common command line interface 
+
+## Clone team project
+Now the new developper can work with all the team project
+
+```
+$ jm project
+  name        | path                | portfolio
+  ------------|---------------------|----------
+  project_a   | ***no local path*** | team-portfolio
+  project_b   | ***no local path*** | team-portfolio
+  project_c   | ***no local path*** | team-portfolio
+  charpentier | ***no local path*** | personnal-projects
+
+$ jm clone --worspace ~/Sites project_a 
+Cloning into ~/Sites/project_a...
+
+$ jm project
+$ jm project
+  name        | path                | portfolio
+  ------------|---------------------|----------
+  project_a   |~/Sites/project_a    | team-portfolio
+  project_b   | ***no local path*** | team-portfolio
+  project_c   | ***no local path*** | team-portfolio
+  charpentier | ***no local path*** | personnal-projects
+
+$ jm cd project_a
+$ pwd
+~/Sites/project_a.com
+
+$ pwd
+~/Sites/project_a.com
+```
 
 
-## work with all the team projects at once
 ## Manage multiple environnement
 
-Each project script data script and file are in tis own folder inside the `~/.charpentier/projects/project` directory
+```
+$ jm -p project_a env
+  local
+  stage
+  prod
+
+$ jm -p project_a -e prod deploy
+  deploy project_a on prod environnement
+  using variable from 
+  ~/.charpentier/projects/project_a/charpentier.yml
+  and override with environnements from
+  ~/.charpentier/env/prod/project_a/charpentier.yml
+```
+
+If you want to run a lot of command for a project you can tel
+
+```
+$ jm project project_a
+  charpentier will use project_a
+  using variable from 
+  ~/.charpentier/projects/project_a/charpentier.yml
+$ jm env local
+  charpentier will use project_a with local environnement
+  using variable from 
+  ~/.charpentier/projects/project_a/charpentier.yml
+  and override with environnements from
+  ~/.charpentier/env/prod/project_a/charpentier.yml
+$ jm merge stage prod
+  project: project_a, environnement: local
+  charpentier mergin stage branch to prod
+  OK
+$ jm check
+  project: project_a, environnement: local
+  charpentier run unit test and static analysis
+  OK
+$ jm deploy
+  project: project_a, environnement: local
+  deploy project_a on prod environnement root@10.0.0.123
+  OK
+```
+
+## project configuration and files
+
+Each project script data script and file are in this own folder inside the `~/.charpentier/projects/project` directory
 
 You can override script and variable by environnement in `~/.charpentier/env/*/project` 
 
@@ -52,7 +155,7 @@ You can version prod environnement in a private repository accessible only to sy
 └── readme.md
 ```
 
-## common interface for multiple tool
+
 
 ## Simple provisionner
 
