@@ -33,6 +33,8 @@
 - support sunzi legacy, install.sh sunzi.yml
 
 ## Somedays
+- check seattlerb/rake-remote_task
+- add task for $ git ls-files | tee manifest.txt
 - fork to skeleton project
 - add gem files to install by gem
 - refactor integration test to cucumber
