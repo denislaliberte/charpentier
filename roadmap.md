@@ -35,6 +35,33 @@
 
 ## v0 readme - Cli tool template
 
+### Objectives
+
+Charpentier is a simple provisionner for your projects servers
+Like [sunzi](https://github.com/kenn/sunzi) it organise simple config template files and shell scripts for every environnements.
+
+```cmd
+$ jm install staging root@new_host.example.com
+```
+
+Charpentier is a simple newbie friendly interface for all your projects command line tools
+Help to onboard new user, document developpement tools and automate frequent task
+
+```cmd
+$ jm frontend build // run grunt, gulp or wathever
+$ jm test // run rake test, pytest 
+```
+
+Charpentier help to manage multiple project (inspire from [gitgot](https://github.com/genehack/app-gitgot))
+
+```cmd
+$ jm ls
+  mywebsite.com
+  myapp
+  client_app
+$ jm deploy client_app
+```
+
 Charpentier is a devops tool to automate task on multiple projects with différents
 technology, tooling and environnement.
 
