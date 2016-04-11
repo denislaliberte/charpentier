@@ -92,6 +92,16 @@ $ gem install charpentier
 
 ## v1.0 readme - Simple automation tool for teams
 
+### Commands
+
+```
+$ jm commands
+
+
+```
+
+
+
 ### portfolio
 
 Now you can clone the team portfolio of projects or create your own
