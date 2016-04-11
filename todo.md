@@ -1,6 +1,5 @@
 # todo
 
-- add readme for version 1.0
 - add rake task to publish to gh pages
 - break publish in merge and push
 - add rake task to publish to remove log file
