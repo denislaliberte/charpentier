@@ -1,6 +1,6 @@
 # Charpentier Roadmap
 
-### Project Goals
+***This is the future readme of the v1 of the charpentier project in the idea of [Readme Driven Design ](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)***
 
 ## v0 goals
 
@@ -31,12 +31,12 @@
 - add check script
 - add travis
 
+
+
 ## v0 readme - Cli tool template
 
 Charpentier is a devops tool to automate task on multiple projects with différents
 technology, tooling and environnement.
-
-
 
 If for example you have a small team of 5 to 50 developpers, 5 to 25 active client, 5 to 500 legacy project
 you support multiple technologie maybe js, ruby, python and more
@@ -61,14 +61,16 @@ Name after Jean-Marie Charpentier, he is friendly you can call him jm
 $ gem install charpentier
 ```
 
+
+
 ## v1 goals
 
 - support sunzi legacy, install.sh sunzi.yml
 
+
+
+
 ## v1.0 readme - Simple automation tool for teams
-
-***This is the future readme of the v1 of the charpentier project in the idea of [Readme Driven Design ](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)***
-
 
 ### portfolio
 
@@ -219,7 +221,8 @@ You can version prod environnement in a private repository accessible only to sy
 Charpentier integrate with gitolite as your main git hosting or as a mirror.
 
 
-### 2.0
+## v2 goals 
+
 - database caching mongo or redis
 - portable core, only dependencies, yaml, moustache, docopt
 
