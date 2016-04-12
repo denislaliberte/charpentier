@@ -1,8 +1,14 @@
 # todo
 
+- add all notes to roadmap
+- roadmap clean basic usage for v1
+- roadmap adapt v0.x branch to reflect v1 readme
+- roadmap clean vX readme
+- roadmap cleanup someday list
+- readme, list documentation and purpose
+- CI make simple travis build pass on the latest stable ruby version
 - add rake task to publish to gh pages
 - break publish in merge and push
 - add rake task to publish to remove log file
 - add check task rubocop and rspec
-- travisci
 - rake task build readme, alias jm to charpentier

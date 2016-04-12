@@ -35,7 +35,7 @@ Name after Jean-Marie Charpentier, he is friendly you can call him jm
 
 mdwiki.html et navigation.md
 
-contriution
+contribution
 
 code_of_conduct.md
 
