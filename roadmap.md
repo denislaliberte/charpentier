@@ -1,6 +1,6 @@
 # Charpentier Roadmap
 
-## v0 readme - Cli tool template
+## v0.1 readme - Cli tool template
 
 ### Objectives
 
