@@ -33,9 +33,9 @@ Name after Jean-Marie Charpentier, he is friendly you can call him jm
 
 ### Documentation
 
-mdwiki
+mdwiki.html et navigation.md
 
-navigation.md
+contriution
 
 code_of_conduct.md
 
@@ -45,11 +45,19 @@ roadmap
 
 ### Code quality
 
+Integration testing
+
+CI
+
+Static analysis
 
 ### Dependencies
 
-
 ### Automation
+
+Publish doc to github
+
+Run test and rubocop
 
 --------------------------------------------------------------------------------
 
@@ -91,12 +99,45 @@ roadmap
 ```
 $ jm commands
 
-
+   Portfolio
+      download
+      use-project
+      use-environnemnt
+   Provisionner:
+      provision
+   Developement:
+      dev-tools         install developpement tools
+      virtual-macine    bootstrap vagrant
+      serve             simple webserver
+      test              run tests
+      analyse           run static analysis
+   Build: 
+      build
+      watch
+   Workflow:
+      branch            create new feature branch
+      stage             
+      deploy            
+  Document:
+      genrate
+      publish
 ```
+
+### Developpement
+
+### Provisionner
 
 ```cmd
-$ jm install staging root@new_host.example.com
+$ jm provision staging root@new_host.example.com
 ```
+
+### Build
+
+### Workflow
+
+### Portfolio
+
+
 
 Charpentier is a simple newbie friendly interface for all your projects command line tools
 Help to onboard new user, document developpement tools and automate frequent task
