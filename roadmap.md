@@ -1,14 +1,98 @@
 # Charpentier Roadmap
 
-***This is the future readme of the v1 of the charpentier project in the idea of [Readme Driven Design ](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)***
-
-
 ## v0 readme - Cli tool template
 
 ### Objectives
 
-Charpentier is a simple provisionner for your projects servers
-Like [sunzi](https://github.com/kenn/sunzi) it organise simple config template files and shell scripts for every environnements.
+Charpentier is your team automation tools, it's help to integrate all the tools
+for your multiple projects with diverse technical requirements.
+
+### Current state
+
+Right now Charpentier is only a command line application skeletton, you can use it as a base 
+for your next tool.
+
+The [roadmap](roadmap.md) contains the readme for futures version in the fashion of 
+[Readme Driven Design ](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
+
+### Install
+
+```
+$ gem install charpentier
+```
+
+### simple command line interface
+
+```cmd
+$ jm
+Charpentier, Simple devops tools for small teams
+Name after Jean-Marie Charpentier, he is friendly you can call him jm
+
+  Usage: jm [--help] compile
+```
+
+### Documentation
+
+mdwiki
+
+navigation.md
+
+code_of_conduct.md
+
+mit-liscence.md
+
+roadmap
+
+### Code quality
+
+
+### Dependencies
+
+
+### Automation
+
+--------------------------------------------------------------------------------
+
+## v0 minor release goals
+
+### 0.0
+- Integration test, aruba, rspec
+- base commands, help, version
+- documentation, readme, mdwiki, roadmap, changelog, liscence
+- basic cli interface
+- travisci
+
+### 0.1 
+- Scaffold
+- Compile recipes and files with attributes in charpentier.yml
+- Execute on vagrant
+
+### 0.2
+- read yml from roles, recipes and global overrides
+- compile multiple recipes to script.sh
+- execute by ssh
+
+### 0.3
+- resolve dependecies
+- manage default and namespace for dependencies
+- manage name colision for recipe with default value
+
+### 0.4
+- manage log files
+- add check script
+- add travis
+
+--------------------------------------------------------------------------------
+
+## v1.0 readme - Simple automation tool for teams
+
+### Commands
+
+```
+$ jm commands
+
+
+```
 
 ```cmd
 $ jm install staging root@new_host.example.com
@@ -52,53 +136,7 @@ Name after Jean-Marie Charpentier, he is friendly you can call him jm
 
   Usage: jm [--help] compile
 ```
-### Install
 
-```
-$ gem install charpentier
-```
-
-
-## v0 goals
-
-### 0.0
-- Integration test, aruba, rspec
-- base commands, help, version
-- documentation, readme, mdwiki, roadmap, changelog, liscence
-- basic cli interface
-- travisci
-
-### 0.1 
-- Scaffold
-- Compile recipes and files with attributes in charpentier.yml
-- Execute on vagrant
-
-### 0.2
-- read yml from roles, recipes and global overrides
-- compile multiple recipes to script.sh
-- execute by ssh
-
-### 0.3
-- resolve dependecies
-- manage default and namespace for dependencies
-- manage name colision for recipe with default value
-
-### 0.4
-- manage log files
-- add check script
-- add travis
-
-
-
-## v1.0 readme - Simple automation tool for teams
-
-### Commands
-
-```
-$ jm commands
-
-
-```
 
 
 
@@ -250,10 +288,14 @@ You can version prod environnement in a private repository accessible only to sy
 
 Charpentier integrate with gitolite as your main git hosting or as a mirror.
 
+--------------------------------------------------------------------------------
+
 ## v1 goals
 
 - support sunzi legacy, install.sh sunzi.yml
 
+
+--------------------------------------------------------------------------------
 
 ## v2 readme - Plugin system
 
@@ -287,15 +329,20 @@ project folder inside the repository
     └── local.yml
 ```
 
+--------------------------------------------------------------------------------
+
 ## v2 goals 
 
 - database caching mongo or redis
 - portable core, only dependencies, yaml, moustache, docopt
 
+--------------------------------------------------------------------------------
 
 ## v3 readme - Ecosystem 
 
 The only dependencies for the core are docopt, moustache and yml
+
+--------------------------------------------------------------------------------
 
 ## Somedays
 
