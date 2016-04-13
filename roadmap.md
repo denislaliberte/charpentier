@@ -199,8 +199,6 @@ Name after Jean-Marie Charpentier, he is friendly you can call him jm
 
 ### portfolio
 
-Now you can clone the team portfolio of projects or create your own
-
 ```
 $ jm portfolio create personnal-projects
   new portfolio in ~/.charpentier/portfolio/personnal-projects
