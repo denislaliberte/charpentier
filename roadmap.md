@@ -362,62 +362,39 @@ Charpentier integrate with gitolite as your main git hosting or as a mirror.
 
 --------------------------------------------------------------------------------
 
-## v1 goals
-
-- support sunzi legacy, install.sh sunzi.yml
-
-
---------------------------------------------------------------------------------
-
 ## v2 readme - Plugin system
 
-### Simple provisionner
+Charpentier is build of several plugins, you can replace them or write your own
 
-### Webhook Plugin
+plugin      | description
+------------|------------
+jm-core     |
+jm-cli      |
+jm-command  | api to declare new commands and option in datastructure
+jm-alias    | simple command for alias
+jm-execute  | exécution of command
+jm-conf     | manage configuration with environnement overrides and defaults
+jm-db       | put your configuration in document database instead of file system
+jm-file     | put your configuration in yaml, csv or json files
+jm-compile  | compile template for config and script files
+jm-script   | execute script local and remote
+jm-web      | webapi and webhook
+jm-doc      | generate static site for documentation 
+jm-chat     | talk to charpentier over chat
+jm-task     | integrate with task manager like rake
+jm-provision|
+jm-git      | use the scm api to enforce your branching model
+jm-js       | single page application to controle the jm-web
 
-Charpentier commands can be trigger by web hook, you can call them from CI server, github or gitlab
-
-### Lita plugin
-
-Install charpentier lita plugin so you can invoke commands by chat or have notification
-
-### build your own plugins
-
-### project data
-If you want to share the charpentier data with developper outside of your team you can also put the
-project folder inside the repository
-
-```
-~/Sites/project_example/charpentier
-├── charpentier.yml
-├── compiled
-├── recipes
-│   ├── complete_recipe
-│   │   ├── data.yml
-│   │   ├── file.conf
-│   │   └── script.sh
-│   └── simple_recipes.sh
-└── roles
-    └── local.yml
-```
 
 --------------------------------------------------------------------------------
 
-## v2 goals 
-
-- database caching mongo or redis
-- portable core, only dependencies, yaml, moustache, docopt
-
---------------------------------------------------------------------------------
-
-## v3 readme - Ecosystem 
-
-The only dependencies for the core are docopt, moustache and yml
-
---------------------------------------------------------------------------------
 
 ## Somedays
 
+- the only run time dependecies are docopt, moustache and yml to have a language agonstic api
+- port the cli application to go to eliminate run time dependecies
+- implement the chatops server with hubot and js
 - manage multiple team portfolio of project 
 - check seattlerb/rake-remote_task
 - add task for $ git ls-files | tee manifest.txt
