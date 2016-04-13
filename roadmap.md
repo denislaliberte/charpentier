@@ -26,6 +26,8 @@ $ gem install charpentier
 
 ### simple command line interface
 
+The most simple command line interface librairy is include [metadone](http://naildrivin5.com/methadone/)
+
 ```cmd
 $ jm
 Charpentier, Simple devops tools for small teams
@@ -34,33 +36,48 @@ Name after Jean-Marie Charpentier, he is friendly you can call him jm
   Usage: jm [--help] compile
 ```
 
-### Documentation
+### md Wiki
 
-mdwiki.html et navigation.md
+mdwiki is here to transform the readme in a full github pages website for free
 
-contribution
+All you need to know about mdwiki is all you need is in index.html and you dont need 
+to change anything it's just work. The home page is the readme.md and you add all 
+the links you want in the menu in the file navigation. See more at mdwiki.info
 
-code_of_conduct.md
+I dont thing the google indexing bot like mdwiki but it's not a concern for the v0
+version and you can change it when you publish the v1 official version.
 
-mit-liscence.md
+### contribution
 
-roadmap
+The code of conduc included is from the contributor-covenant.org
+
+The mit liscence is included, choose another here choosealicense.com
 
 ### Code quality
 
-Integration testing
+A simple travis ci file is include and the badge is include in the readme.
 
-CI
+Some cucumber test and rspec test are include but it's just place holder
 
-Static analysis
+A rubocop file is include fo static analysis.
 
 ### Dependencies
 
+gemspec
+
+runtime dependencies
+
+developpement dependencies
+
 ### Automation
 
-Publish doc to github
+A rake file is include with task for publish the doc to github and check code quality
 
-Run test and rubocop
+### Semantic versionning
+
+A file with the current version (v0.1.0) as the name is include its contains the spectification
+from semver.org
+
 
 --------------------------------------------------------------------------------
 
