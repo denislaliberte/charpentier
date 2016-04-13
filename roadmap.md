@@ -7,6 +7,9 @@
 Charpentier is your team automation tools, it's help to integrate all the tools
 for your multiple projects with diverse technical requirements.
 
+It's wrap the mos frequently use command of yours projects with a common cli intergface
+It's help document and standardise automation across projects
+
 ### Current state
 
 Right now Charpentier is only a command line application skeletton, you can use it as a base 
@@ -99,28 +102,41 @@ Run test and rubocop
 ```
 $ jm commands
 
+      e | execute          default command - execute command at the root of the project
    Portfolio
-      download
-      use-project
-      use-environnemnt
+      d | download              download project or portfolio
+      project | use-project     set current project, list if no arguments
+      env | use-environnemnt    set current environement, list if no arguments
    Provisionner:
-      provision
+      p | provision
    Developement:
-      dev-tools         install developpement tools
-      virtual-macine    bootstrap vagrant
-      serve             simple webserver
-      test              run tests
-      analyse           run static analysis
+      tools | dev-tools      install developpement tools
+      vm | virtual-macine    bootstrap vagrant
+      s  | serve             simple webserver
+      t  | test              run tests
+      a  | analyse           run static analysis
+      tk | task              execute task or if nor arguments list availaible task from external tools, rake fabrick gulp or other
    Build: 
-      build
-      watch
+      b | build
+      w | watch
    Workflow:
-      branch            create new feature branch
-      stage             
-      deploy            
+      wb | branch            create new feature branch
+      ws | stage             deploy branch to stage server
+      wr | release           create release branches from branch
+      wd |  deploy           deploy stage release to prod server
   Document:
-      genrate
-      publish
+      g | genrate
+      p | publish
+
+  Options:
+     -p       projects
+     -e       Environnement
+     -v       verbose
+     -q       quiet, minimum output
+     -y       without confirmation, use default
+     -p       password
+     -u       user root@localhost
+     -o       output - log file location
 ```
 
 ### Developpement
