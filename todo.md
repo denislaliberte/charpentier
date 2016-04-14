@@ -1,4 +1,4 @@
- ## todo v0.0.0
+ ## todo v0.0.0-alpha
 
  In this file is the current task for the next release, the next step are in the road map minor relase goals
  and done items are in the change log in the current -alpha or beta branch
