@@ -370,6 +370,7 @@ plugin      | description
 ------------|------------
 jm-core     |
 jm-cli      |
+jm-package  | package manager
 jm-command  | api to declare new commands and option in datastructure
 jm-alias    | simple command for alias
 jm-execute  | exécution of command
@@ -385,6 +386,7 @@ jm-task     | integrate with task manager like rake
 jm-provision|
 jm-git      | use the scm api to enforce your branching model
 jm-js       | single page application to controle the jm-web
+jm-password | password management 
 
 
 --------------------------------------------------------------------------------
