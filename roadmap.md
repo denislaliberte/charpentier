@@ -90,25 +90,43 @@ from semver.org
 - basic cli interface
 - travisci
 
-### 0.1 
-- Scaffold
-- Compile recipes and files with attributes in charpentier.yml
-- Execute on vagrant
+### 0.1
+- create           scaffold projects, plugins or portfolio
+- download              download project
 
 ### 0.2
 - read yml from roles, recipes and global overrides
-- compile multiple recipes to script.sh
-- execute by ssh
+- execute          default command - execute command at the root of the project
+- virtual-macine    bootstrap vagrant
 
 ### 0.3
-- resolve dependecies
-- manage default and namespace for dependencies
-- manage name colision for recipe with default value
+- provision use sunzi to provision vm
 
 ### 0.4
+- task              execute task or if nor arguments list availaible task from external tools, rake fabrick gulp or other
+
+### 0.5
+- use-project     set current project, list if no arguments
+- use-environnemnt    set current environement, list if no arguments
+- deploy           deploy stage release to prod server
+
+### 0.x
+- branch            create new feature branch
+- stage             deploy branch to stage server
+- release           create release branches from branch
 - manage log files
+- test              run tests
+- analyse           run static analysis
+- compile multiple recipes to script.sh
+- dev-tools      install developpement tools for project
+- build
+- watch
+- download              download portfolio
+- serve             simple webserver
+- genrate
+- publish
+- resolve dependecies
 - add check script
-- add travis
 
 --------------------------------------------------------------------------------
 

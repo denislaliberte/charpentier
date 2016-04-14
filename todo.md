@@ -1,11 +1,6 @@
 # todo V0.0.0
 
-- roadmap clean basic usage for v1
-- roadmap adapt v0.x branch to reflect v1 readme
 - roadmap clean vX readme
-- roadmap cleanup someday list
-
-
 - refactor gemfile / bundler to split dependencies in run time and developpement dependencies
 - check the installation with gem
 - contribution guide
