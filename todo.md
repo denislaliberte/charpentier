@@ -1,7 +1,5 @@
 # todo V0.0.0
 
-
-- add all notes to roadmap
 - roadmap clean basic usage for v1
 - roadmap adapt v0.x branch to reflect v1 readme
 - roadmap clean vX readme
