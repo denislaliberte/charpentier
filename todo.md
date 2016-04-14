@@ -1,7 +1,7 @@
 # todo V0.0.0
 
 - check the installation with gem
-- contribution guide
+- contribution guide http://guides.rubygems.org/publishing/
 - document command line interface in the v0 readme
 - readme, list documentation and purpose
 - CI make simple travis build pass on the latest stable ruby version
