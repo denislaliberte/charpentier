@@ -90,25 +90,43 @@ from semver.org
 - basic cli interface
 - travisci
 
-### 0.1 
-- Scaffold
-- Compile recipes and files with attributes in charpentier.yml
-- Execute on vagrant
+### 0.1
+- create           scaffold projects, plugins or portfolio
+- download              download project
 
 ### 0.2
 - read yml from roles, recipes and global overrides
-- compile multiple recipes to script.sh
-- execute by ssh
+- execute          default command - execute command at the root of the project
+- virtual-macine    bootstrap vagrant
 
 ### 0.3
-- resolve dependecies
-- manage default and namespace for dependencies
-- manage name colision for recipe with default value
+- provision use sunzi to provision vm
 
 ### 0.4
+- task              execute task or if nor arguments list availaible task from external tools, rake fabrick gulp or other
+
+### 0.5
+- use-project     set current project, list if no arguments
+- use-environnemnt    set current environement, list if no arguments
+- deploy           deploy stage release to prod server
+
+### 0.x
+- branch            create new feature branch
+- stage             deploy branch to stage server
+- release           create release branches from branch
 - manage log files
+- test              run tests
+- analyse           run static analysis
+- compile multiple recipes to script.sh
+- dev-tools      install developpement tools for project
+- build
+- watch
+- download              download portfolio
+- serve             simple webserver
+- genrate
+- publish
+- resolve dependecies
 - add check script
-- add travis
 
 --------------------------------------------------------------------------------
 
@@ -116,10 +134,12 @@ from semver.org
 
 ### Commands
 
-```
+```cmd
 $ jm commands
-
       e | execute          default command - execute command at the root of the project
+      c | create           scaffold projects, plugins or portfolio
+        | alias            add project command
+        | variable         add project environment variable
    Portfolio
       d | download              download project or portfolio
       project | use-project     set current project, list if no arguments
@@ -127,7 +147,7 @@ $ jm commands
    Provisionner:
       p | provision
    Developement:
-      tools | dev-tools      install developpement tools
+      tools | dev-tools      install developpement tools for project
       vm | virtual-macine    bootstrap vagrant
       s  | serve             simple webserver
       t  | test              run tests
@@ -156,40 +176,6 @@ $ jm commands
      -o       output - log file location
 ```
 
-### Developpement
-
-### Provisionner
-
-```cmd
-$ jm provision staging root@new_host.example.com
-```
-
-### Build
-
-### Workflow
-
-### Portfolio
-
-
-
-Charpentier is a simple newbie friendly interface for all your projects command line tools
-Help to onboard new user, document developpement tools and automate frequent task
-
-```cmd
-$ jm frontend build // run grunt, gulp or wathever
-$ jm test // run rake test, pytest 
-```
-
-Charpentier help to manage multiple project (inspire from [gitgot](https://github.com/genehack/app-gitgot))
-
-```cmd
-$ jm ls
-  mywebsite.com
-  myapp
-  client_app
-$ jm deploy client_app
-```
-
 Charpentier is a devops tool to automate task on multiple projects with différents
 technology, tooling and environnement.
 
@@ -211,8 +197,28 @@ Name after Jean-Marie Charpentier, he is friendly you can call him jm
   Usage: jm [--help] compile
 ```
 
+Charpentier is a simple newbie friendly interface for all your projects command line tools
+Help to onboard new user, document developpement tools and automate frequent task
 
+#### simple example
 
+```cmd
+$ jm frontend build // run grunt, gulp or wathever
+$ jm test // run rake test, pytest 
+```
+
+Charpentier help to manage multiple project (inspire from [gitgot](https://github.com/genehack/app-gitgot))
+
+```cmd
+$ jm project
+  name        | path                | portfolio
+  ------------|---------------------|----------
+  client_app   |~/Sites/client_app    | team-portfolio
+  project_b   | ***no local path*** | team-portfolio
+  project_c   | ***no local path*** | team-portfolio
+  charpentier | ***no local path*** | personnal-projects
+$ jm deploy -p client_app
+```
 
 ### portfolio
 
@@ -237,7 +243,7 @@ If your using multiple technologie you have a lot of tools to automate task on y
 
 Whith charpentier you can configure a common command line interface 
 
-### Clone team project
+### Download team project
 Now the new developper can work with all the team project
 
 ```
@@ -249,9 +255,8 @@ $ jm project
   project_c   | ***no local path*** | team-portfolio
   charpentier | ***no local path*** | personnal-projects
 
-$ jm clone --worspace ~/Sites project_a 
+$ jm download --worspace ~/Sites project_a 
 Cloning into ~/Sites/project_a...
-
 $ jm project
 $ jm project
   name        | path                | portfolio
@@ -285,7 +290,7 @@ $ jm -p project_a -e prod deploy
   ~/.charpentier/env/prod/project_a/charpentier.yml
 ```
 
-If you want to run a lot of command for a project you can tel
+If you want to run a lot of command for a project you can tel jm wich projects to use
 
 ```
 $ jm project project_a
@@ -350,15 +355,16 @@ You can version prod environnement in a private repository accessible only to sy
 └── readme.md
 ```
 
+### gitgot
+
 ### rake
 
 ### sunzi
 
-### gitgot
-
 ### gitolite
 
 Charpentier integrate with gitolite as your main git hosting or as a mirror.
+
 
 --------------------------------------------------------------------------------
 
@@ -394,41 +400,19 @@ jm-password | password management
 
 ## Somedays
 
-- the only run time dependecies are docopt, moustache and yml to have a language agonstic api
-- port the cli application to go to eliminate run time dependecies
-- implement the chatops server with hubot and js
-- manage multiple team portfolio of project 
-- check seattlerb/rake-remote_task
-- add task for $ git ls-files | tee manifest.txt
-- fork to skeleton project
-- add gem files to install by gem
-- refactor integration test to cucumber
-- check  http://editorconfig.org
-- http://keepachangelog.com/
-- scrutinizer-ci.com and/or appveyor.com and/or code climate
-- check autotest https://autotest.github.io/
-- check http://yardoc.org/
-- check relishapp
-- add http://humanstxt.org/humans.txt and meta to mdwiki
-- check http://read-the-docs.readthedocs.org/
-- constribution guide $ git show contribting
-- support one file plugin
 - test open3 http://ruby-doc.org/stdlib-1.9.3/libdoc/open3/rdoc/Open3.html
-- refactor ssh to a plugin
-- add lita plugin plugins.lita.io
-- deploy to digital ocean
-- download template script
-- download template dependencies
-- delete compiled folder for security
-- export csv for check status
+- refactor integration test to cucumber
+- http://keepachangelog.com/
+- add task for $ git ls-files | tee manifest.txt
+- check seattlerb/rake-remote_task
+- scrutinizer-ci.com and/or appveyor.com and/or code climate
+- fork to skeleton project
+- the only run time dependecies are docopt, moustache and yml to have a language agonstic api
+- implement the chatops server with hubot and js
+- check relishapp
 - add style checker for recipes
 - generate readme from roles and recipes
 - vagrant provisionner plugin github.com/mitchellh/vagrant/tree/master/plugins/provisioners
 - docker plugin
 - deploy to linode
-- Manage multiple repos
-- export csv information for multiple repos, format with wikimd
-- Import / export from github.com/genehack/app-gitgo and gitolite.com
 - create simple dependecy manager csv, github pages
-- Choose a command line interface docopt.org or naildrivin5.com/gli
-- web hook for git operation

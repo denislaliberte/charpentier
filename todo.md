@@ -1,15 +1,8 @@
-# todo V0.0.0
+ todo V0.0.0
 
-
-- add all notes to roadmap
-- roadmap clean basic usage for v1
-- roadmap adapt v0.x branch to reflect v1 readme
-- roadmap clean vX readme
-- roadmap cleanup someday list
-
-
-- refactor gemfile / bundler to split dependencies in run time and developpement dependencies
-- check the installation with gem
+- check the installation with gem http://guides.rubygems.org/make-your-own-gem/  http://guides.rubygems.org/publishing/
+- see example : https://github.com/moredip/didactic_clock/blob/master/lib/didactic_clock/version.rb
+- add description to gemspec file
 - contribution guide
 - document command line interface in the v0 readme
 - readme, list documentation and purpose
@@ -19,3 +12,4 @@
 - add rake task to publish to remove log file
 - add check task rubocop and rspec
 - rake task build readme, alias jm to charpentier
+- roadmap clean vX readme
