@@ -138,6 +138,8 @@ from semver.org
 $ jm commands
       e | execute          default command - execute command at the root of the project
       c | create           scaffold projects, plugins or portfolio
+        | alias            add project command
+        | variable         add project environment variable
    Portfolio
       d | download              download project or portfolio
       project | use-project     set current project, list if no arguments

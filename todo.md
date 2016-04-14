@@ -1,4 +1,4 @@
-# todo V0.0.0
+ todo V0.0.0
 
 - check the installation with gem http://guides.rubygems.org/make-your-own-gem/  http://guides.rubygems.org/publishing/
 - see example : https://github.com/moredip/didactic_clock/blob/master/lib/didactic_clock/version.rb
