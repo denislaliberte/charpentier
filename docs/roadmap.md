@@ -84,15 +84,19 @@ from semver.org
 ## v0 minor release goals
 
 ### 0.0
-- Integration test, aruba, rspec
-- base commands, help, version
-- documentation, readme, mdwiki, roadmap, changelog, liscence
-- basic cli interface
-- travisci
+- Integration test cucumber
+- gemspec and installation instruction from github
+- extensive roadmap
+- simple contribution guide
+- automation with rake, publish to gh-pages, alias command line, run test, clean log files
+- build readme from template and cli output, generate manifest
+- travisci, check code quality, run test on latest stable version of ruby
+- do an awseome list https://github.com/sindresorhus/awesome
 
 ### 0.1
 - create           scaffold projects, plugins or portfolio
 - download              download project
+- add change log link like https://raw.githubusercontent.com/olivierlacan/keep-a-changelog/v0.0.7/CHANGELOG.md
 
 ### 0.2
 - read yml from roles, recipes and global overrides
@@ -376,6 +380,7 @@ plugin      | description
 ------------|------------
 jm-core     |
 jm-cli      |
+jm-package  | package manager
 jm-command  | api to declare new commands and option in datastructure
 jm-alias    | simple command for alias
 jm-execute  | exécution of command
@@ -391,6 +396,7 @@ jm-task     | integrate with task manager like rake
 jm-provision|
 jm-git      | use the scm api to enforce your branching model
 jm-js       | single page application to controle the jm-web
+jm-password | password management 
 
 
 --------------------------------------------------------------------------------
