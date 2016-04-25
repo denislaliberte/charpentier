@@ -1,10 +1,11 @@
 # Charpentier
 
-[ about ]()
+[ About ]()
 
-  * [ roadmap ](docs/roadmap.md)
-  * [ code of conduct ](docs/code_of_conduct.md)
-  * [ mit-liscence ](docs/mit-liscence.md)
-  * [ manifest ](docs/manifest.md)
+  * [ Roadmap ](docs/roadmap.md)
+  * [ Contributing ](docs/contributing.md)
+  * [ Code of conduct ](docs/code_of_conduct.md)
+  * [ Mit liscence ](docs/mit-liscence.md)
+  * [ Manifest ](docs/manifest.md)
 
 [ Github ](https://github.com/denislaliberte/charpentier)
